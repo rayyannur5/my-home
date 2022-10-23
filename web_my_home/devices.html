@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devices</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/device.css">
+    <link rel="stylesheet" href="style/fontawesome.css">
+    <link rel="stylesheet" href="style/solid.css">
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 fw-bold" href="#">My Home</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search"
+            aria-label="Search">
+        <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="index.html">Sign out</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                <div class="position-sticky pt-3 sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link inactiveMenu text-light" aria-current="page" href="dashboard.html">
+                                <span data-feather="home" class="align-text-bottom"></span>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link inactiveMenu text-light" href="rooms.html">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Rooms
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activeMenu" href="devices.html">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Devices
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link inactiveMenu text-light" href="profile.html">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Profile
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+                <div class="pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Devices</h1>
+                </div>
+
+                <div class="my-4 p-3 shadow rounded-5">
+                    <div class="col">
+                        <div class="room m-3">
+                            <div class="hstack gap-0">
+
+                                <span style="font-size: 4em; color: #333;">
+                                    <i class="fa-solid fa-lightbulb p-3"></i>
+                                </span>
+
+                                <div class="me-auto p-3" style="width: 200px;">
+                                    <h4 class="fw-bold">Lampu 1</h4>
+                                </div>
+
+                                <div class="btn-group">
+                                    <span style="font-size: 2em; color: #333;">
+                                        <i data-bs-toggle="modal" data-bs-target="#editDevice"
+                                            class="fa-solid fa-pen-to-square ps-1 pt-4"></i>
+                                    </span>
+                                    <span style="font-size: 2em; color: #333;">
+                                        <i data-bs-toggle="modal" data-bs-target="#delete"
+                                            class="fa-solid fa-trash p-4"></i>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room m-3">
+                            <div class="hstack gap-0">
+                                <span style="font-size: 4em; color: #333;">
+                                    <i class="fa-solid fa-lightbulb p-3"></i>
+                                </span>
+
+                                <div class="me-auto p-3" style="width: 200px;">
+                                    <h4 class="fw-bold">Lampu 2</h4>
+                                </div>
+
+                                <div class="btn-group">
+                                    <span style="font-size: 2em; color: #333;">
+                                        <i data-bs-toggle="modal" data-bs-target="#editDevice"
+                                            class="fa-solid fa-pen-to-square ps-1 pt-4"></i>
+                                    </span>
+                                    <span style="font-size: 2em; color: #333;">
+                                        <i data-bs-toggle="modal" data-bs-target="#delete"
+                                            class="fa-solid fa-trash p-4"></i>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room m-3">
+                            <div class="hstack gap-0">
+                                <span style="font-size: 4em; color: #333;">
+                                    <i class="fa-solid fa-fan p-3"></i>
+                                </span>
+                                <div class="me-auto p-3" style="width: 200px;">
+                                    <h4 class="fw-bold">Fan</h4>
+                                </div>
+                                <div class="btn-group">
+                                    <span style="font-size: 2em; color: #333;">
+                                        <i data-bs-toggle="modal" data-bs-target="#editDevice"
+                                            class="fa-solid fa-pen-to-square ps-1 pt-4"></i>
+                                    </span>
+                                    <span style="font-size: 2em; color: #333;">
+                                        <i data-bs-toggle="modal" data-bs-target="#delete"
+                                            class="fa-solid fa-trash p-4"></i>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room m-3">
+                            <div class="hstack gap-0">
+
+                                <span style="font-size: 4em; color: #333;">
+                                    <i class="fa-solid fa-faucet-drip p-3"></i>
+                                </span>
+
+                                <div class="me-auto p-3" style="width: 200px;">
+                                    <h4 class="fw-bold">Water</h4>
+                                </div>
+
+                                <div class="btn-group">
+                                    <span style="font-size: 2em; color: #333;">
+                                        <i data-bs-toggle="modal" data-bs-target="#editDevice"
+                                            class="fa-solid fa-pen-to-square ps-1 pt-4"></i>
+                                    </span>
+                                    <span style="font-size: 2em; color: #333;">
+                                        <i data-bs-toggle="modal" data-bs-target="#delete"
+                                            class="fa-solid fa-trash p-4"></i>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <a href="#" class="float" data-bs-toggle="modal" data-bs-target="#addDevice">
+        <i class="fa fa-plus my-float"></i>
+    </a>
+
+
+    <!-- Modal Device-->
+    <div class="modal fade" id="addDevice" tabindex="-1" aria-labelledby="addDeviceLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-5">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="addDeviceLabel">Add Device</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Type</h5>
+                    <div class="input-group mb-3  rounded-pill">
+                        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option value="1">Lamp</option>
+                            <option value="2">Garden Lamp</option>
+                            <option value="3">Air Conditioner</option>
+                            <option value="4">Water</option>
+                            <option value="5">Other Device</option>
+                        </select>
+                    </div>
+                    <h5>Name</h5>
+                    <input type="text" class="form-control rounded-pill" placeholder="Device Name">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark rounded-pill">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Edit Device-->
+    <div class="modal fade" id="editDevice" tabindex="-1" aria-labelledby="editDeviceLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-5">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="editDeviceLabel">Edit Device</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Type</h5>
+                    <div class="input-group mb-3  rounded-pill">
+                        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option value="1">Lamp</option>
+                            <option value="2">Garden Lamp</option>
+                            <option value="3">Air Conditioner</option>
+                            <option value="4">Water</option>
+                            <option value="5">Other Device</option>
+                        </select>
+                    </div>
+                    <h5>Name</h5>
+                    <input type="text" class="form-control rounded-pill" placeholder="Device Name">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark rounded-pill">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Delete -->
+    <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="deleteLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-5">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3" id="deleteLabel">Delete</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark rounded-pill">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/dashboard.css">
+  <link rel="stylesheet" href="style/fontawesome.css">
+  <link rel="stylesheet" href="style/solid.css">
+</head>
+
+<body>
+
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 fw-bold" href="#">My Home</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search"
+      aria-label="Search">
+    <div class="navbar-nav">
+      <div class="nav-item text-nowrap">
+        <a class="nav-link px-3" href="index.html">Sign out</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+        <div class="position-sticky pt-3 sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link activeMenu" aria-current="page" href="dashboard.html">
+                <span data-feather="home" class="align-text-bottom"></span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link inactiveMenu text-light" href="rooms.html">
+                <span data-feather="file" class="align-text-bottom"></span>
+                Rooms
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link inactiveMenu text-light" href="devices.html">
+                <span data-feather="file" class="align-text-bottom"></span>
+                Devices
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link inactiveMenu text-light" href="profile.html">
+                <span data-feather="file" class="align-text-bottom"></span>
+                Profile
+              </a>
+            </li>
+          </ul>
+
+
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Morning! Rayyan Nur Fauzan</h1>
+        </div>
+        <div class="weather my-4 shadow rounded-5">
+          <div class="hstack">
+            <div class="me-auto">
+              <h1 class="text-light ps-3 pt-3">Cloudy</h1>
+              <p class="text-light ps-3">Surabaya, Jawa Timur</p>
+            </div>
+            <div class="ps-5 pe-3 pt-3">
+              <img src="assets/weather-cloudy.png" width="90px" alt="">
+            </div>
+            <div class="pt-4 me-4">
+              <p class="fs-1 pt-2 text-light">32°C</p>
+              <p class="text-light">Humidity 30%</p>
+            </div>
+          </div>
+        </div>
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Rooms</h1>
+        </div>
+
+        <div class="my-4 shadow rounded-5">
+          <div class="row">
+            <div class="col-md-2 text-center">
+              <button class="room m-3 roomActive">
+                <span style="font-size: 3em; color: white;">
+                  <i class="fa-solid fa-people-roof"></i>
+                </span>
+              </button>
+              <p>Living Room</p>
+            </div>
+            <div class="col-md-2 text-center">
+              <button class="room m-3">
+                <span style="font-size: 3em; color: #333;">
+                  <i class="fa-solid fa-people-group"></i>
+                </span>
+              </button>
+              <p>Family Room</p>
+            </div>
+            <div class="col-md-2 text-center">
+              <button class="room m-3">
+                <span style="font-size: 3em; color: #333;">
+                  <i class="fa-solid fa-bed"></i>
+                </span>
+              </button>
+              <p>Bed Room</p>
+            </div>
+            <div class="col-md-2 text-center">
+              <button class="room m-3">
+                <span style="font-size: 3em; color: #333;">
+                  <i class="fa-solid fa-bath"></i>
+                </span>
+              </button>
+              <p>Bath Room</p>
+            </div>
+            <div class="col-md-2 text-center">
+              <button class="room m-3">
+                <span style="font-size: 3em; color: #333;">
+                  <i class="fa-solid fa-kitchen-set"></i>
+                </span>
+              </button>
+              <p>Kitchen</p>
+            </div>
+            <div class="col-md-2 text-center">
+              <button class="room m-3" type="button" data-bs-toggle="modal" data-bs-target="#addRoom">
+                <span style="font-size: 3em; color: #333;">
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </button>
+              <p>Add Room</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Devices</h1>
+        </div>
+
+        <div class="my-4 shadow rounded-5">
+          <div class="row">
+
+            <div class="card rounded-5 m-4" style="width: 18rem;">
+              <img src="assets/device/lamp off.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                  <h5>
+                    <label class="card-title form-check-label" for="flexSwitchCheckDefault">Lampu 1</label>
+                  </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card rounded-5 m-4 bg-dark" style="width: 18rem;">
+                <img src="assets/device/lamp on.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                    <h5>
+                      <label class="card-title text-light form-check-label" for="flexSwitchCheckDefault">Lampu 2</label>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card rounded-5 m-4" style="width: 18rem;">
+                <img src="assets/device/ac off.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <h5>
+                      <label class="card-title form-check-label" for="flexSwitchCheckDefault">Air Conditioner</label>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card rounded-5 m-4 bg-dark" style="width: 18rem;">
+                <img src="assets/device/ac on.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                    <h5>
+                      <label class="card-title text-light form-check-label" for="flexSwitchCheckDefault">Air
+                        Conditioner</label>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card rounded-5 m-4" style="width: 18rem;">
+                <img src="assets/device/garden lamp off.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <h5>
+                      <label class="card-title form-check-label" for="flexSwitchCheckDefault">Garden Lamp</label>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card rounded-5 m-4 bg-dark" style="width: 18rem;">
+                <img src="assets/device/garden lamp on.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                    <h5>
+                      <label class="card-title text-light form-check-label" for="flexSwitchCheckDefault">Garden
+                        Lamp</label>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-4 shadow rounded-5">
+
+          </div>
+
+      </main>
+    </div>
+  </div>
+
+  <a href="#" class="float" data-bs-toggle="modal" data-bs-target="#addDevice">
+    <i class="fa fa-plus my-float"></i>
+  </a>
+
+
+  <!-- Modal Room-->
+<div class="modal fade" id="addRoom" tabindex="-1" aria-labelledby="addRoomLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-5">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="addRoomLabel">Add Room</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Type</h5>
+        <div class="input-group mb-3  rounded-pill">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option value="1">Living Room</option>
+            <option value="2">Family Room</option>
+            <option value="3">Bed Room</option>
+            <option value="4">Bath Room</option>
+            <option value="5">Kitchen</option>
+            <option value="6">Garden</option>
+            <option value="7">Garage</option>
+          </select>
+        </div>
+        <h5>Name</h5>
+        <input type="text" class="form-control rounded-pill" placeholder="Room Name">
+        <h5 class="mt-3">Description</h5>
+        <input type="text" class="form-control rounded-pill" placeholder="Room Description">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-dark rounded-pill">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal Device-->
+<div class="modal fade" id="addDevice" tabindex="-1" aria-labelledby="addDeviceLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-5">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="addDeviceLabel">Add Device</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Type</h5>
+        <div class="input-group mb-3  rounded-pill">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option value="1">Lamp</option>
+            <option value="2">Garden Lamp</option>
+            <option value="3">Air Conditioner</option>
+            <option value="4">Water</option>
+            <option value="5">Other Device</option>
+          </select>
+        </div>
+        <h5>Name</h5>
+        <input type="text" class="form-control rounded-pill" placeholder="Device Name">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-dark rounded-pill">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

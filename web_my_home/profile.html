@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/profile.css">
+  <link rel="stylesheet" href="style/fontawesome.css">
+  <link rel="stylesheet" href="style/solid.css">
+</head>
+
+<body>
+
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 fw-bold" href="#">My Home</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search"
+      aria-label="Search">
+    <div class="navbar-nav">
+      <div class="nav-item text-nowrap">
+        <a class="nav-link px-3" href="index.html">Sign out</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+        <div class="position-sticky pt-3 sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link inactiveMenu text-light" aria-current="page" href="dashboard.html">
+                <span data-feather="home" class="align-text-bottom"></span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link inactiveMenu text-light" href="rooms.html">
+                <span data-feather="file" class="align-text-bottom"></span>
+                Rooms
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link inactiveMenu text-light" href="devices.html">
+                <span data-feather="file" class="align-text-bottom"></span>
+                Devices
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activeMenu" href="profile.html">
+                <span data-feather="file" class="align-text-bottom"></span>
+                Profile
+              </a>
+            </li>
+          </ul>
+
+
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="row shadow m-3 rounded-5 align-items-center" style="height: 400px;" >
+            <div class="col-lg-2" style="width: 250px;">
+                <span style="font-size: 13em; color: #333;">
+                    <i class="fa-solid fa-circle-user ms-5"></i>
+                  </span>
+            </div>
+            <div class="col-md-8">
+                <h1 class="fw-bold">Rayyan Nur Fauzan</h1>
+                <h5>rayyannur5@gmail.com</h5>
+            </div>
+        </div>
+
+        <div class="row m-3">
+            <div class="col-lg-7 me-3 p-5 shadow rounded-5" style="height: 600px;">
+                <h2 class="fw-bold border-bottom mb-3">About me</h2>
+                <table class="table">
+                    <tr >
+                        <td>No Telepon</td>
+                        <td>085215955155</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>rayyannur5@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, optio.</td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>Laki-Laki</td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>26 Juni 2002</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-4 shadow rounded-5 p-5" style="height: 600px;">
+                <h5 class="border-bottom mb-3">Edit Profil</h5>
+                <h5 class="border-bottom mb-3">Change Password</h5>
+                <h5 class="mb-3 text-light p-2" style="height: 40px; border-radius: 20px; background-color: rgb(255, 71, 71);">Logout</h5>
+            </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+
+  <!-- Modal Room-->
+<div class="modal fade" id="addRoom" tabindex="-1" aria-labelledby="addRoomLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-5">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="addRoomLabel">Add Room</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Type</h5>
+        <div class="input-group mb-3  rounded-pill">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option value="1">Living Room</option>
+            <option value="2">Family Room</option>
+            <option value="3">Bed Room</option>
+            <option value="4">Bath Room</option>
+            <option value="5">Kitchen</option>
+            <option value="6">Garden</option>
+            <option value="7">Garage</option>
+          </select>
+        </div>
+        <h5>Name</h5>
+        <input type="text" class="form-control rounded-pill" placeholder="Room Name">
+        <h5 class="mt-3">Description</h5>
+        <input type="text" class="form-control rounded-pill" placeholder="Room Description">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-dark rounded-pill">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal Device-->
+<div class="modal fade" id="addDevice" tabindex="-1" aria-labelledby="addDeviceLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-5">
+      <div class="modal-header">
+        <h1 class="modal-title fs-3" id="addDeviceLabel">Add Device</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Type</h5>
+        <div class="input-group mb-3  rounded-pill">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option value="1">Lamp</option>
+            <option value="2">Garden Lamp</option>
+            <option value="3">Air Conditioner</option>
+            <option value="4">Water</option>
+            <option value="5">Other Device</option>
+          </select>
+        </div>
+        <h5>Name</h5>
+        <input type="text" class="form-control rounded-pill" placeholder="Device Name">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-dark rounded-pill">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
